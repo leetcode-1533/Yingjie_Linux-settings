@@ -4,14 +4,34 @@ PS1='[\w \u\$]'
 alias xcat='pygmentize -f console'
 alias log='telnet -l y1275963 192.168.1.15'
 alias vim='mvim -v'
+alias adown='aria2c --enable-rpc --rpc-listen-all &'
+
 export PATH=$PATH:/usr/local/mysql/bin
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/Applications/Server.app/Contents/ServerRoot/usr/bin:/Applications/Server.app/Contents/ServerRoot/usr/sbin:/usr/local/mysql/bin
 
-##
-# Your previous /Users/y1275963/.bash_profile file was backed up as /Users/y1275963/.bash_profile.macports-saved_2013-11-01_at_15:07:46
-##
 
-# MacPorts Installer addition on 2013-11-01_at_15:07:46: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
+export PATH=/usr/local/Cellar:$PATH
 
+export PATH=~/Qt5.3.1/5.3/clang_64/bin:$PATH
+
+
+# added by Anaconda 2.1.0 installer
+export PATH="/Users/y1275963/anaconda/bin:$PATH"
+
+#export MAMP_PHP=/Applications/MAMP/bin/php/php5.3.6/bin
+#export PATH="$MAMP_PHP:$PATH"
+
+
+# ImageMagic:
+export MAGICK_HOME="/usr/local/bin/ImageMagick-6.9.0"
+export PATH="$MAGICK_HOME/bin:$PATH"
+export DYLD_LIBRARY_PATH="$MAGICK_HOME/lib/"
+
+#aria2:
+export PATH="/usr/local/aria2/bin:$PATH"
+
+#vi mode for long bash
+set -o vi
+#sublime
+ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+export EDITOR='subl -w'
