@@ -33,5 +33,4 @@ export PATH="/usr/local/aria2/bin:$PATH"
 #vi mode for long bash
 set -o vi
 #sublime
-ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 export EDITOR='subl -w'
